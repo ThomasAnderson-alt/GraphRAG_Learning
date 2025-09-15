@@ -197,25 +197,6 @@ Centralizes all pipeline, model, and workflow settings:
   cd GraphRAG_Learning
   ```
 
-2. **Activate the Virtual Environment**:
-   The project includes a pre-configured virtual environment.
-
-   ```powershell
-   # On Windows
-   .\GraphRAG\GraphRAG_Test\GraphRAG.venv\Scripts\Activate.ps1
-   ```
-
-3. **Set Environment Variables**:
-   Create a `.env` file in the `GraphRAG/GraphRAG_Test/` directory and add your API key:
-
-   ```text
-   GRAPHRAG_API_KEY="your-api-key-here"
-   ```
-
-### Running the Indexing Pipeline
-
-# Before you can run queries, you must first process your input data. The following command will initialize the project structure and run the full indexing pipeline based on the settings in `settings.yaml`.
-
 ### ⚡ Setup
 
 1. **Clone the repository**
@@ -241,31 +222,6 @@ Centralizes all pipeline, model, and workflow settings:
 
 ### 🏗️ Running the Indexing Pipeline
 
-> > > > > > > 80da456 (README.md update)
-
-```sh
-graphrag --init --root ./GraphRAG/GraphRAG_Test/ragtest
-```
-
-<<<<<<< HEAD
-This will read the data from `ragtest/input/`, process it, and store the output in `ragtest/output/`.
-
-### Running Queries
-
-Once the indexing is complete, you can run queries using the following commands.
-
-#### Global Search Query
-
-```sh
-graphrag query --root ./GraphRAG/GraphRAG_Test/ragtest --method global "What are the top themes in this story?"
-```
-
-#### Local Search Query
-
-```sh
-graphrag query --root ./GraphRAG/GraphRAG_Test/ragtest --method local "Who is Scrooge and what are his main relationships?"
-```
-
 #### DRIFT Search Query
 
 ````sh
@@ -286,16 +242,6 @@ graphrag query --root ./GraphRAG/GraphRAG_Test/ragtest --method drift "How might
 
 ---
 
-<<<<<<< HEAD
-
-## Data Flow
-
-- **Input (`ragtest/input/`)**: Place your source text files here. The project is pre-loaded with `book.txt`.
-- **Cache (`ragtest/cache/`)**: Stores intermediate results from the indexing pipeline to speed up subsequent runs.
-- **Output (`ragtest/output/`)**: Contains the final processed data, including Parquet files for entities, relationships, and communities, as well as the LanceDB vector store.
-- **Logs (`ragtest/logs/`)**: Records logs from the indexing and query processes for debugging.
-- # **Prompts (`ragtest/prompts/`)**: Contains all the prompt templates used by the LLMs for various tasks.
-
 ## 🔄 Data Flow
 
 - **Input**: `ragtest/input/` — Source text files (e.g., `book.txt`)
@@ -306,27 +252,6 @@ graphrag query --root ./GraphRAG/GraphRAG_Test/ragtest --method drift "How might
 
 ---
 
-## <<<<<<< HEAD
-
-## 🤝 Contributing
-
-We welcome contributions to **GraphRAG Learning**! To contribute:
-
-1. Fork the repository and create your branch from `master`.
-2. Ensure your code follows the existing style and includes appropriate tests/documentation.
-3. Open a pull request with a clear description of your changes and reference any related issues.
-4. For major changes, please open an issue first to discuss your proposal.
-
-**Code of Conduct:** Please be respectful and constructive in all interactions.
-
----
-
-=======
-
-> > > > > > > 9ce0de4 (README.md update)
-
 ## 📝 License
 
 This project is licensed under the MIT License. See [LICENSE](LICENSE) for details.
-
-> > > > > > > 80da456 (README.md update)
