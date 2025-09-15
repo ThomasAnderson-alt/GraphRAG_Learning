@@ -22,11 +22,9 @@ To get a local copy up and running follow these simple steps.
 
 1. **Clone the repo**
 
-   ````sh
+   ```sh
    git clone https://github.com/ThomasAnderson-alt/GraphRAG_Learning.git
-   ```plaintext
-
-   ````
+   ```
 
 2. **Navigate to the project directory**
 
@@ -61,8 +59,7 @@ The main logic is within the `ragtest` directory.
 
 ## 📂 Project Structure
 
-```plaintext
---- IGNORE ---
+```
 GraphRAG/
 ├── GraphRAG_Test/
 │   ├── GraphRAG.venv/      # Virtual environment
@@ -96,3 +93,5 @@ An example of query results can be found in `Program Result/GraphRAG_QueryEngine
 ## 📜 License
 
 Distributed under the MIT License. See `LICENSE` for more information.
+
+Project Link: [https://github.com/ThomasAnderson-alt/GraphRAG_Learning](https://github.com/ThomasAnderson-alt/GraphRAG_Learning)
