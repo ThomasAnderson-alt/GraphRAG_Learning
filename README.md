@@ -187,21 +187,15 @@ Centralizes all pipeline, model, and workflow settings:
 - Python 3.11+
 - OpenAI-compatible API key (pre-configured for SiliconFlow)
 
-<<<<<<< HEAD
-
-### Prerequisites
+### 🛠️ Prerequisites
 
 - Python 3.11+
-- An API key for an OpenAI-compatible service. This project is pre-configured for SiliconFlow.
+- OpenAI-compatible API key (pre-configured for SiliconFlow)
 
-### Setup
-
-1. **Clone the repository**:
-
-   ```sh
-   git clone <repository-url>
-   cd GraphRAG_Learning
-   ```
+  ```sh
+  git clone <repository-url>
+  cd GraphRAG_Learning
+  ```
 
 2. **Activate the Virtual Environment**:
    The project includes a pre-configured virtual environment.
@@ -312,7 +306,7 @@ graphrag query --root ./GraphRAG/GraphRAG_Test/ragtest --method drift "How might
 
 ---
 
----
+## <<<<<<< HEAD
 
 ## 🤝 Contributing
 
@@ -326,6 +320,10 @@ We welcome contributions to **GraphRAG Learning**! To contribute:
 **Code of Conduct:** Please be respectful and constructive in all interactions.
 
 ---
+
+=======
+
+> > > > > > > 9ce0de4 (README.md update)
 
 ## 📝 License
 
