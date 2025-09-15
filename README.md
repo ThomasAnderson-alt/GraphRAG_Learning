@@ -1,36 +1,28 @@
-# GraphRAG Learning Project
+=======
 
-> [![Python 3.11+](https://img.shields.io/badge/python-3.11+-blue.svg)](https://www.python.org/downloads/release/python-3110/) > [![GraphRAG](https://img.shields.io/badge/Framework-GraphRAG-blueviolet)](https://microsoft.github.io/graphrag/) > [![LanceDB](https://img.shields.io/badge/Vector_Store-LanceDB-yellowgreen)](https://lancedb.github.io/lancedb/) > [![OpenAI API](https://img.shields.io/badge/API-OpenAI-brightgreen)](https://platform.openai.com/docs/api-reference)
+# 🚀 GraphRAG Learning Project
 
-This project demonstrates the capabilities of GraphRAG, an advanced retrieval-augmented generation (RAG) framework that uses graph-based methods to enhance information retrieval and question answering. It supports multiple search strategies, including global, local, and DRIFT search, as well as entity-based question generation.
+[![Python 3.11+](https://img.shields.io/badge/python-3.11+-blue.svg)](https://www.python.org/downloads/release/python-3110/)
+[![GraphRAG](https://img.shields.io/badge/Framework-GraphRAG-blueviolet)](https://microsoft.github.io/graphrag/)
+[![LanceDB](https://img.shields.io/badge/Vector_Store-LanceDB-yellowgreen)](https://lancedb.github.io/lancedb/)
+[![OpenAI API](https://img.shields.io/badge/API-OpenAI-brightgreen)](https://platform.openai.com/docs/api-reference)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-This repository is configured to run with specific models and provides detailed examples based on Charles Dickens' _A Christmas Carol_.
+> > > > > > > # 80da456 (README.md update)
 
-## Table of Contents
+# 🚀 GraphRAG Learning Project
 
-- [Features](#features)
-- [Project Structure](#project-structure)
-- [Core Components](#core-components)
-  - [Query Engine](#query-engine)
-  - [Key Scripts](#key-scripts)
-  - [Configuration (`settings.yaml`)](#configuration-settingsyaml)
-- [Getting Started](#getting-started)
-  - [Prerequisites](#prerequisites)
-  - [Setup](#setup)
-  - [Running the Indexing Pipeline](#running-the-indexing-pipeline)
-  - [Running Queries](#running-queries)
-- [Data Flow](#data-flow)
+[![Python 3.11+](https://img.shields.io/badge/python-3.11+-blue.svg)](https://www.python.org/downloads/release/python-3110/)
+[![GraphRAG](https://img.shields.io/badge/Framework-GraphRAG-blueviolet)](https://microsoft.github.io/graphrag/)
+[![LanceDB](https://img.shields.io/badge/Vector_Store-LanceDB-yellowgreen)](https://lancedb.github.io/lancedb/)
+[![OpenAI API](https://img.shields.io/badge/API-OpenAI-brightgreen)](https://platform.openai.com/docs/api-reference)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-## Features
+> > > > > > > 80da456 (README.md update)
 
-- **Global Search**: For broad, high-level questions that require a comprehensive analysis of the entire dataset.
-- **Local Search**: For direct, factual questions about specific entities or details.
-- **DRIFT Search**: For complex, investigative questions that require iterative exploration and contextual understanding.
-- **Entity-Based Question Generation**: Capable of generating questions based on extracted entities.
-- **Configurable Pipeline**: All major settings, from LLM models to workflow steps, are controlled via `settings.yaml`.
-- **Embeddings and Vector Search**: Utilizes LanceDB for efficient storage and querying of text embeddings.
+---
 
-## Project Structure
+<<<<<<< HEAD
 
 ```text
 GraphRAG/
@@ -100,7 +92,102 @@ The `settings.yaml` file is the central configuration for the entire GraphRAG pi
 
 ---
 
-## Getting Started
+=======
+
+## 📖 Overview
+
+GraphRAG Learning is an advanced Retrieval-Augmented Generation (RAG) project leveraging graph-based methods for enhanced information retrieval and question answering. It supports:
+
+- 🌐 **Global Search**: High-level, summarization questions
+- 🔍 **Local Search**: Direct, factual entity-based queries
+- 🧭 **DRIFT Search**: Iterative, investigative exploration
+- 🏷️ **Entity-based Question Generation**
+
+The repository is pre-configured for Charles Dickens' _A Christmas Carol_ and demonstrates a full RAG pipeline with LanceDB vector search and OpenAI-compatible LLMs.
+
+---
+
+## 🗂️ Table of Contents
+
+- [✨ Features](#-features)
+- [📁 Project Structure](#-project-structure)
+- [🧩 Core Components](#-core-components)
+- [🚦 Getting Started](#-getting-started)
+- [🔄 Data Flow](#-data-flow)
+- [📝 License](#-license)
+
+---
+
+## ✨ Features
+
+- **Multi-Strategy Search**: Global, Local, and DRIFT search for flexible information retrieval
+- **Entity-based Question Generation**: Generate questions from extracted entities
+- **Configurable Pipeline**: All major settings in `settings.yaml`
+- **LanceDB Vector Search**: Fast, scalable embedding storage
+- **Prompt Templates**: Modular prompt design for LLM tasks
+- **Reproducible Environment**: Pre-built Python 3.11+ virtual environment
+
+---
+
+## 📁 Project Structure
+
+```text
+GraphRAG/
+├── GraphRAG_Test/
+│   ├── .env                  # API keys and environment variables
+│   ├── GraphRAG.venv/        # Python virtual environment
+│   └── ragtest/
+│       ├── fix_missing_embeddings.py         # Script to backfill missing vector embeddings
+│       ├── generate_missing_community_report.py # Script to regenerate community reports
+│       ├── settings.yaml                     # Main pipeline configuration
+│       ├── prompts/                         # Prompt templates for LLM tasks
+│       ├── input/                           # Input data (e.g., book.txt)
+│       ├── output/                          # Output data (Parquet, LanceDB, etc.)
+│       ├── cache/                           # Intermediate results
+│       └── logs/                            # Log files
+└── Program Result/
+    ├── GraphRAG_QueryEngine_result.md       # Query engine analysis and results
+    └── settings.yaml                        # (Duplicate) Pipeline configuration
+```
+
+---
+
+## 🧩 Core Components
+
+### ⚙️ Query Engine
+
+Performs three main search types, each powered by LLMs and graph context:
+
+- **Global Search**: Map-reduce LLM analysis for broad themes
+- **Local Search**: Focused entity/relationship queries
+- **DRIFT Search**: Iterative, context-building exploration
+
+### 🛠️ Key Scripts
+
+- `fix_missing_embeddings.py`: Ensures all community reports have vector embeddings for DRIFT search
+- `generate_missing_community_report.py`: Backfills or regenerates community reports for missing IDs
+
+### ⚙️ Configuration (`settings.yaml`)
+
+Centralizes all pipeline, model, and workflow settings:
+
+- LLM and embedding model selection
+- Input/output/cache directory structure
+- Workflow steps (graph extraction, summarization, reporting)
+- Query prompt locations and context limits
+
+---
+
+## 🚦 Getting Started
+
+### 🛠️ Prerequisites
+
+> > > > > > > 80da456 (README.md update)
+
+- Python 3.11+
+- OpenAI-compatible API key (pre-configured for SiliconFlow)
+
+<<<<<<< HEAD
 
 ### Prerequisites
 
@@ -133,12 +220,40 @@ The `settings.yaml` file is the central configuration for the entire GraphRAG pi
 
 ### Running the Indexing Pipeline
 
-Before you can run queries, you must first process your input data. The following command will initialize the project structure and run the full indexing pipeline based on the settings in `settings.yaml`.
+# Before you can run queries, you must first process your input data. The following command will initialize the project structure and run the full indexing pipeline based on the settings in `settings.yaml`.
+
+### ⚡ Setup
+
+1. **Clone the repository**
+
+   ```sh
+   git clone <repository-url>
+   cd GraphRAG_Learning
+   ```
+
+2. **Activate the virtual environment**
+
+   ```powershell
+   .\GraphRAG\GraphRAG_Test\GraphRAG.venv\Scripts\Activate.ps1
+   ```
+
+3. **Set your API key**
+
+   - Create a `.env` file in `GraphRAG/GraphRAG_Test/`:
+
+     ```env
+     GRAPHRAG_API_KEY="your-api-key-here"
+     ```
+
+### 🏗️ Running the Indexing Pipeline
+
+> > > > > > > 80da456 (README.md update)
 
 ```sh
 graphrag --init --root ./GraphRAG/GraphRAG_Test/ragtest
 ```
 
+<<<<<<< HEAD
 This will read the data from `ragtest/input/`, process it, and store the output in `ragtest/output/`.
 
 ### Running Queries
@@ -159,11 +274,25 @@ graphrag query --root ./GraphRAG/GraphRAG_Test/ragtest --method local "Who is Sc
 
 #### DRIFT Search Query
 
+````sh
+=======
+This processes input data and prepares all outputs for querying.
+
+### 🔎 Running Queries
+
 ```sh
+# Global Search
+graphrag query --root ./GraphRAG/GraphRAG_Test/ragtest --method global "What are the top themes in this story?"
+# Local Search
+graphrag query --root ./GraphRAG/GraphRAG_Test/ragtest --method local "Who is Scrooge and what are his main relationships?"
+# DRIFT Search
+>>>>>>> 80da456 (README.md update)
 graphrag query --root ./GraphRAG/GraphRAG_Test/ragtest --method drift "How might Scrooge's childhood events have indirectly led to his loneliness in adulthood?"
-```
+````
 
 ---
+
+<<<<<<< HEAD
 
 ## Data Flow
 
@@ -171,4 +300,35 @@ graphrag query --root ./GraphRAG/GraphRAG_Test/ragtest --method drift "How might
 - **Cache (`ragtest/cache/`)**: Stores intermediate results from the indexing pipeline to speed up subsequent runs.
 - **Output (`ragtest/output/`)**: Contains the final processed data, including Parquet files for entities, relationships, and communities, as well as the LanceDB vector store.
 - **Logs (`ragtest/logs/`)**: Records logs from the indexing and query processes for debugging.
-- **Prompts (`ragtest/prompts/`)**: Contains all the prompt templates used by the LLMs for various tasks.
+- # **Prompts (`ragtest/prompts/`)**: Contains all the prompt templates used by the LLMs for various tasks.
+
+## 🔄 Data Flow
+
+- **Input**: `ragtest/input/` — Source text files (e.g., `book.txt`)
+- **Cache**: `ragtest/cache/` — Intermediate pipeline results
+- **Output**: `ragtest/output/` — Final data (entities, relationships, communities, LanceDB)
+- **Logs**: `ragtest/logs/` — Process logs
+- **Prompts**: `ragtest/prompts/` — All LLM prompt templates
+
+---
+
+---
+
+## 🤝 Contributing
+
+We welcome contributions to **GraphRAG Learning**! To contribute:
+
+1. Fork the repository and create your branch from `master`.
+2. Ensure your code follows the existing style and includes appropriate tests/documentation.
+3. Open a pull request with a clear description of your changes and reference any related issues.
+4. For major changes, please open an issue first to discuss your proposal.
+
+**Code of Conduct:** Please be respectful and constructive in all interactions.
+
+---
+
+## 📝 License
+
+This project is licensed under the MIT License. See [LICENSE](LICENSE) for details.
+
+> > > > > > > 80da456 (README.md update)
